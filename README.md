@@ -1,134 +1,75 @@
-# Perri's Brewery
-Compatible with oclif 4.x, build debian packages from dist, create manpage from README.md and include prerm, postrm, preinst and postinst scripts for Debian package.
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# perrisbrewery
 
-# Usage
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/perrisbrewery)
 
-Add the package to your package.json as devDependencies
-```
-  "perrisbrewery": "^26.1.20",
-```
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-and create a script deb:
+## Architecture
 
-```
-  "deb": "tsc -p . && pb deb",
-```
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Create a config dir `perrisbrewery` inside the project followind the sample, 
-then use the script deb with your favourite package manager, mine is pnpm:
+## Install
 
-```
-pnpm deb
-```
-<!-- usagestop -->
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-# Commands
-<!-- commands -->
-* [`pb deb [PATHSOURCE]`](#pb-deb-pathsource)
-* [`pb help [COMMAND]`](#pb-help-command)
-* [`pb tarballs [TARBALLS]`](#pb-tarballs-tarballs)
-* [`pb version`](#pb-version)
-
-## `pb deb [PATHSOURCE]`
-
-Pack CLI into debian package.
-
-```
-USAGE
-  $ pb deb [PATHSOURCE] [-h] [-a] [-r <value>] [-M] [-v]
-
-ARGUMENTS
-  [PATHSOURCE]  pathSource
-
-FLAGS
-  -M, --manpages         refresh manpages on the sources
-  -a, --all              all architectures
-  -h, --help             Show CLI help.
-  -r, --release=<value>  release
-  -v, --verbose          verbose
-
-DESCRIPTION
-  Pack CLI into debian package.
-
-  Create a deb package from your npm package
+```bash
+git clone https://github.com/Interested-Deving-1896/perrisbrewery.git
+cd perrisbrewery
 ```
 
-_See code: [src/commands/deb.ts](https://github.com/pieroproietti/perrisbrewery/blob/v26.1.28/src/commands/deb.ts)_
+## Usage
 
-## `pb help [COMMAND]`
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-Display help for pb.
+## Configuration
 
-```
-USAGE
-  $ pb help [COMMAND...] [-n]
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-ARGUMENTS
-  [COMMAND...]  Command to show help for.
+## CI
 
-FLAGS
-  -n, --nested-commands  Include all nested commands in the output.
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-DESCRIPTION
-  Display help for pb.
-```
+## Mirror chain
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.37/src/commands/help.ts)_
-
-## `pb tarballs [TARBALLS]`
-
-rename tarballs with release.
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/perrisbrewery`](https://github.com/Interested-Deving-1896/perrisbrewery) and mirrored through:
 
 ```
-USAGE
-  $ pb tarballs [TARBALLS] [-h] [-r <value>] [-v]
-
-ARGUMENTS
-  [TARBALLS]  pathTarballs
-
-FLAGS
-  -h, --help             Show CLI help.
-  -r, --release=<value>  release
-  -v, --verbose          verbose
-
-DESCRIPTION
-  rename tarballs with release.
-
-  Tarballs
+Interested-Deving-1896/perrisbrewery  ──►  OpenOS-Project-OSP/perrisbrewery  ──►  OpenOS-Project-Ecosystem-OOC/perrisbrewery
 ```
 
-_See code: [src/commands/tarballs.ts](https://github.com/pieroproietti/perrisbrewery/blob/v26.1.28/src/commands/tarballs.ts)_
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## `pb version`
+## Contributors
 
-```
-USAGE
-  $ pb version [--json] [--verbose]
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-FLAGS
-  --verbose  Show additional information about the CLI.
+## Origins
 
-GLOBAL FLAGS
-  --json  Format output as json.
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-FLAG DESCRIPTIONS
-  --verbose  Show additional information about the CLI.
+## Resources
 
-    Additionally shows the architecture, node version, operating system, and versions of plugins that the CLI is using.
-```
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-_See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/v2.2.36/src/commands/version.ts)_
-<!-- commandsstop -->
+## License
 
-# More informations
-You can contact me by [mail](mailto://pieroproietti@gmail.com) or follow me on 
-[blog](https://penguins-eggs.net), 
-[facebook](https://www.facebook.com/groups/128861437762355/), 
-[github](https://github.com/pieroproietti/penguins-krill), 
-[jtsi](https://meet.jit.si/PenguinsEggsMeeting), 
-[reddit](https://www.reddit.com/user/Artisan61), 
-[telegram](https://t.me/penguins_eggs), 
-[twitter](https://twitter.com/pieroproietti).
-
-# Copyright and licenses
-Copyright (c) 2017, 2026 [Piero Proietti](https://penguins-eggs.net/about-me.html), dual licensed under the MIT or GPL Version 2 licenses.
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
